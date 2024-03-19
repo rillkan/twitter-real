@@ -8,7 +8,7 @@ export default function ChatbotModal({ show, handleClose }) {
   const sendMessage = async (e) => {
     e.preventDefault();
     const API_URL = "https://api.openai.com/v1/chat/completions";
-    const apiKey = import.meta.env.VITE_OPENAI_API_KEY; // replace this with your own apiKey from openAI
+    const apiKey = import.meta.env.VITE_OPENAI_API_KEY; // replace this with your own apiKey from openAI //update: doesnt seemt to work
     console.log(allMessages)
 
     const messagesToSend = [
