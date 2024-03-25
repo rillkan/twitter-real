@@ -18,6 +18,7 @@ export default function ProfileMidBody() {
     }
     receiver */
   const posts = useSelector((state) => state.posts.posts)
+  console.log(posts)
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.posts.loading)
   const { currentUser } = useContext(AuthContext)
@@ -51,7 +52,7 @@ export default function ProfileMidBody() {
       </Row>
 
       <p className="mt-5" style={{ margin: 0, fontWeight: "bold", fontSize: "15px" }}>
-        ProfileMidBody
+        TWITTER-REAL
       </p>
 
       <p style={{ marginBottom: "2px" }}>@haris.samingan</p>
